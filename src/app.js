@@ -1,13 +1,14 @@
- document.getElementById("todo-form").addEventListener("submit", function (e) {
+// Removido: sons do app.js, agora controlados no db.js
+
+document.getElementById("todo-form").addEventListener("submit", function (e) {
   e.preventDefault();
   const input = document.getElementById("todo-input");
+  const timeInput = document.getElementById("todo-time");
   let value = input.value.trim();
-  // Capitaliza a primeira letra se for minúscula
-  if (value.length > 0) {
-    value = value.charAt(0).toUpperCase() + value.slice(1);
-  }
-  addTodo(value);
+  const timeValue = timeInput.value;
+  addTodo(value, timeValue);
   input.value = "";
+  timeInput.value = "";
 });
 
 if ("serviceWorker" in navigator) {

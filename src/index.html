@@ -13,10 +13,18 @@
     <form id="todo-form">
       <div class="input-group">
         <input type="text" id="todo-input" placeholder="Digite sua tarefa..." required />
+        <input type="time" id="todo-time" />
         <button type="submit">Adicionar</button>
       </div>
     </form>
     <ul id="todo-list"></ul>
+    <!-- Modal de Alarme -->
+    <div id="alarm-modal" class="alarm-modal" style="display:none;">
+      <div class="alarm-modal-content">
+        <span id="alarm-text"></span>
+        <button id="alarm-ok">OK</button>
+      </div>
+    </div>
   </div>
 
   <script src="db.js"></script>
