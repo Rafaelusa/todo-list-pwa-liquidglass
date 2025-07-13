@@ -18,7 +18,7 @@ function scheduleAlarm(todoText, todoTime) {
     alarmText.textContent = `Alarme: ${todoText}`;
     alarmModal.style.display = 'flex';
     // Som do alarme
-    const alarmSound = new Audio('sounds/alarm.wav');
+    const alarmSound = new Audio('src/sounds/alarm.wav');
     alarmSound.volume = 0.5;
     alarmSound.loop = true;
     alarmSound.play();
@@ -32,9 +32,9 @@ function scheduleAlarm(todoText, todoTime) {
 }
 let db;
 // Efeitos sonoros perfeitos
-const addSound = new Audio('sounds/add.wav');
+const addSound = new Audio('src/sounds/add.wav');
 addSound.volume = 0.5;
-const removeSound = new Audio('sounds/remove.mp3');
+const removeSound = new Audio('src/sounds/remove.mp3');
 removeSound.volume = 0.5;
 const request = indexedDB.open("todoDB", 1);
 
