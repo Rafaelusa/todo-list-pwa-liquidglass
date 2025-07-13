@@ -21,13 +21,15 @@ Aplicação de lista de tarefas (To-do List) com Progressive Web App (PWA), inte
 
 ## Estrutura de Pastas
 ```
+app.js          # Lógica principal
+index.html      # Interface
+style.css       # Estilos visuais
+sw.js           # Service Worker
+README.md       # Documentação
 src/
-  app.js         # Lógica principal
-  db.js          # Banco de dados e funções de tarefas
-  index.html     # Interface
-  style.css      # Estilos visuais
-  sw.js          # Service Worker
-  sounds/        # Sons (add.wav, remove.mp3, alarm.wav)
+  manifest.json # Manifesto PWA
+  sounds/       # Sons (add.wav, remove.mp3, alarm.wav)
+  
 ```
 
 ## Como Usar
